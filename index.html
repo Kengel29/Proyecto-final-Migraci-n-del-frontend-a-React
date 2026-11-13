@@ -1,0 +1,513 @@
+<!-- Kendri Tatis 100263465 -->
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <title>Cubilete Barber Shop | Barbería en Santo Domingo Este</title>
+    <meta name="description" content="Cubilete Barber Shop: cortes de adulto y niños, cerquillos, facial, tinte y cejas. Abierto todos los días de 9:00 a.m. a 10:00 p.m. Reserva por WhatsApp.">
+    <meta property="og:title" content="Cubilete Barber Shop">
+    <meta property="og:description" content="Tu estilo en las mejores manos. Mira precios, horario y ubicación, y reserva tu cita.">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="es_DO">
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "HairSalon",
+        "name": "Cubilete Barber Shop",
+        "image": "imagenes/logo.jpg",
+        "telephone": "+1-829-450-8024",
+        "priceRange": "RD$100 - RD$500",
+        "address": { "@type": "PostalAddress", "addressLocality": "Santo Domingo Este", "addressCountry": "DO" },
+        "geo": { "@type": "GeoCoordinates", "latitude": 18.45097, "longitude": -69.93189 },
+        "openingHoursSpecification": {
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"],
+            "opens": "09:00", "closes": "22:00"
+        }
+    }
+    </script>
+    <!-- Conexión del CSS -->
+    <link rel="stylesheet" href="estilos.css">
+    <!-- Aplica el tema guardado antes de pintar (por defecto: oscuro) -->
+    <script>
+        (function () {
+            var tema = "dark";
+            try { tema = localStorage.getItem("tema") === "light" ? "light" : "dark"; } catch (e) {}
+            document.documentElement.setAttribute("data-theme", tema);
+        })();
+    </script>
+</head>
+<body>
+
+    <!-- 1. El Encabezado -->
+    <header id="encabezado">
+        <div class="pista">
+            <img class="logo" src="logo.jpg" alt="Logo de Cubilete Barber Shop" width="300">
+        </div>
+        <h1>Cubilete Barber Shop</h1>
+        <p><em>Tu estilo en las mejores manos</em></p>
+    </header>
+
+    <!-- Menú de navegación -->
+    <nav aria-label="Navegación principal">
+        <div class="tabs" role="tablist" aria-label="Secciones de la página">
+            <a class="tab" role="tab" id="tab-inicio" href="#inicio" data-vista="inicio" aria-controls="vista-inicio" aria-selected="true"><span class="ico" aria-hidden="true">🏠</span><span>Inicio</span></a>
+            <a class="tab" role="tab" id="tab-servicios" href="#servicios" data-vista="servicios" aria-controls="vista-servicios" aria-selected="false" tabindex="-1"><span class="ico" aria-hidden="true">✂️</span><span>Servicios</span></a>
+            <a class="tab" role="tab" id="tab-reservas" href="#reservas" data-vista="reservas" aria-controls="vista-reservas" aria-selected="false" tabindex="-1"><span class="ico" aria-hidden="true">📅</span><span>Reservas</span></a>
+        </div>
+        <div class="utiles">
+            <button type="button" class="nav-btn" id="abrir-foto" aria-haspopup="dialog" aria-expanded="false">📷 Foto<span class="solo-pc"> con el propietario</span></button>
+            <button type="button" class="tema-btn" id="btn-tema" aria-pressed="false">☀️ Modo claro</button>
+        </div>
+    </nav>
+
+    <main>
+        <!-- PESTAÑA 1: INICIO -->
+        <div class="vista" id="vista-inicio" role="tabpanel" aria-labelledby="tab-inicio">
+            <div class="atajos" aria-label="Ir a una parte de Inicio">
+                <a href="#contacto-rapido">Contacto</a>
+                <a href="#datos-api">Hoy</a>
+                <a href="#ubicacion">Ubicación</a>
+                <a href="#preguntas">Preguntas</a>
+            </div>
+        <section id="contacto-rapido">
+            <details class="plegable" open>
+                <summary><h2>Contacto Directo</h2></summary>
+            
+            <p>Puedes comunicarte con nosotros directamente a través de los siguientes enlaces:</p>
+            <div class="botones">
+                <a class="neon neon-whatsapp" href="https://wa.me/18294508024" target="_blank">
+                    <svg viewBox="0 0 24 24" width="28" height="28" fill="currentColor" aria-hidden="true">
+                        <path d="M12.04 2a9.9 9.9 0 0 0-8.5 14.9L2 22l5.27-1.38A9.9 9.9 0 1 0 12.04 2zm0 1.8a8.1 8.1 0 1 1-4.3 14.96l-.3-.19-3.13.82.84-3.05-.2-.32A8.1 8.1 0 0 1 12.04 3.8zm-3.2 4.06c-.2 0-.5.07-.77.36-.26.3-1 1-1 2.4s1.03 2.8 1.17 2.98c.15.2 2.02 3.2 5 4.36 2.47.97 2.97.78 3.5.73.54-.05 1.73-.7 1.97-1.4.25-.68.25-1.27.17-1.4-.07-.12-.27-.2-.56-.35-.3-.15-1.73-.86-2-.95-.27-.1-.47-.15-.66.15-.2.3-.76.95-.93 1.15-.17.2-.34.22-.63.07-.3-.15-1.25-.46-2.38-1.47-.88-.78-1.47-1.75-1.64-2.05-.17-.3-.02-.46.13-.6.13-.14.3-.35.44-.52.15-.17.2-.3.3-.5.1-.2.05-.37-.03-.52-.07-.15-.65-1.6-.9-2.18-.23-.56-.47-.49-.65-.5h-.55z"/>
+                    </svg>
+                    WhatsApp: 829-450-8024
+                </a>
+                <a class="neon neon-mapa" href="https://www.google.com/maps/place/18%C2%B027'03.5%22N+69%C2%B055'54.8%22W/@18.4508974,-69.9318813,22a,75y,19.01h,67.34t" target="_blank">
+                    <svg viewBox="0 0 24 24" width="28" height="28" fill="currentColor" aria-hidden="true">
+                        <path d="M12 2a7 7 0 0 0-7 7c0 5.2 7 13 7 13s7-7.8 7-13a7 7 0 0 0-7-7zm0 9.5A2.5 2.5 0 1 1 12 6.5a2.5 2.5 0 0 1 0 5z"/>
+                    </svg>
+                    Ver ubicación en Google Maps
+                </a>
+                <a class="neon neon-azul" href="tel:+18294508024">
+                    <svg viewBox="0 0 24 24" width="28" height="28" fill="currentColor" aria-hidden="true">
+                        <path d="M6.6 10.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1C10.6 21 3 13.4 3 4c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.3 0 .7-.2 1l-2.3 2.2z"/>
+                    </svg>
+                    Llamar ahora
+                </a>
+                <button type="button" class="neon neon-azul" id="btn-compartir">
+                    <svg viewBox="0 0 24 24" width="28" height="28" fill="currentColor" aria-hidden="true">
+                        <path d="M18 16.1c-.8 0-1.5.3-2 .8l-7.1-4.2c.1-.2.1-.5.1-.7s0-.5-.1-.7L16 7.2c.5.5 1.2.8 2 .8 1.7 0 3-1.3 3-3s-1.3-3-3-3-3 1.3-3 3c0 .2 0 .5.1.7L8 9.8C7.5 9.3 6.8 9 6 9c-1.7 0-3 1.3-3 3s1.3 3 3 3c.8 0 1.5-.3 2-.8l7.2 4.2c-.1.2-.1.4-.1.6 0 1.6 1.3 2.9 2.9 2.9s2.9-1.3 2.9-2.9-1.3-2.9-2.9-2.9z"/>
+                    </svg>
+                    <span id="txt-compartir">Compartir</span>
+                </button>
+            </div>
+        </details>
+        </section>
+
+        <section id="datos-api">
+            <h2>Información de Hoy</h2>
+            <div class="tarjetas">
+                <div class="tarjeta">
+                    <h3>Estado del local</h3>
+                    <p class="dato" id="estado-texto">Calculando...</p>
+                    <p class="pequeno" id="estado-detalle">Horario: 9:00 a.m. a 10:00 p.m.</p>
+                </div>
+                <div class="tarjeta">
+                    <h3>Clima en el local</h3>
+                    <p class="dato" id="clima-temp">--</p>
+                    <p class="pequeno" id="clima-desc">Cargando clima...</p>
+                </div>
+                <div class="tarjeta">
+                    <h3>¿Qué tan cerca estás?</h3>
+                    <p class="dato" id="distancia">-- km</p>
+                    <p class="pequeno" id="distancia-desc">Calcula tu distancia al local.</p>
+                    <button type="button" class="neon neon-azul" id="btn-distancia">Calcular distancia</button>
+                </div>
+            </div>
+        </section>
+
+        <section id="ubicacion">
+            <h2>¿Cómo Llegar?</h2>
+            <p>Estamos en Santo Domingo Este. Toca el mapa o usa el botón para abrir la ruta desde donde estás.</p>
+            <div class="mapa-marco">
+                <iframe title="Mapa de Cubilete Barber Shop" src="https://maps.google.com/maps?q=18.45097,-69.93189&z=17&output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade" allowfullscreen></iframe>
+            </div>
+            <div class="botones">
+                <a class="neon neon-mapa" href="https://www.google.com/maps/dir/?api=1&destination=18.45097,-69.93189&travelmode=driving" target="_blank" rel="noopener">
+                    <svg viewBox="0 0 24 24" width="28" height="28" fill="currentColor" aria-hidden="true">
+                        <path d="M12 2a7 7 0 0 0-7 7c0 5.2 7 13 7 13s7-7.8 7-13a7 7 0 0 0-7-7zm0 9.5A2.5 2.5 0 1 1 12 6.5a2.5 2.5 0 0 1 0 5z"/>
+                    </svg>
+                    Cómo llegar desde mi ubicación
+                </a>
+            </div>
+        </section>
+
+        <section id="preguntas">
+            <h2>Preguntas Frecuentes</h2>
+            <details>
+                <summary>¿Cuál es el horario de atención?</summary>
+                <p>Abrimos todos los días, de lunes a domingo, de 9:00 a.m. a 10:00 p.m.</p>
+            </details>
+            <details>
+                <summary>¿Cuánto cuestan los servicios?</summary>
+                <p>Corte de adulto RD$ 500, corte de niños RD$ 400, cerquillos RD$ 300, facial RD$ 200, tinte RD$ 200 y cejas RD$ 100.</p>
+            </details>
+            <details>
+                <summary>¿Cómo puedo reservar mi cita?</summary>
+                <p>En la pestaña Reservas, llena el formulario con tu servicio, fecha y hora, y se abrirá WhatsApp para confirmar. También puedes escribirnos o llamarnos al 829-450-8024.</p>
+            </details>
+            <details>
+                <summary>¿Dónde están ubicados?</summary>
+                <p>En Santo Domingo Este. Usa el mapa de esta página para ver la ruta exacta desde tu ubicación.</p>
+            </details>
+        </section>
+        </div>
+
+        <!-- PESTAÑA 2: SERVICIOS -->
+        <div class="vista" id="vista-servicios" role="tabpanel" aria-labelledby="tab-servicios" hidden>
+        <section id="descripcion-y-servicios">
+            <h2>Sobre Nosotros</h2>
+            <p>
+                En <strong>Cubilete Barber Shop</strong> nos especializamos en brindar atención personalizada y cortes de alta calidad para el cuidado personal masculino. Nos enfocamos en ofrecer un ambiente cómodo y un servicio rápido.
+            </p>
+
+            <h3>Nuestros Servicios y Precios</h3>
+            <ul class="servicios">
+                <li><strong>Corte de adulto:</strong> <span class="precio">RD$ 500.00</span></li>
+                <li><strong>Corte de niños:</strong> <span class="precio">RD$ 400.00</span></li>
+                <li><strong>Cerquillos:</strong> <span class="precio">RD$ 300.00</span></li>
+                <li><strong>Facial:</strong> <span class="precio">RD$ 200.00</span></li>
+                <li><strong>Tinte:</strong> <span class="precio">RD$ 200.00</span></li>
+                <li><strong>Cejas:</strong> <span class="precio">RD$ 100.00</span></li>
+            </ul>
+
+            <p><strong>Horario de atención:</strong> Lunes a Lunes de 9:00 a.m. a 10:00 p.m.</p>
+        
+            <div class="botones">
+                <a class="neon neon-mapa" href="#reservas">📅 Reservar una cita</a>
+            </div>
+        </section>
+        </div>
+
+        <!-- PESTAÑA 3: RESERVAS -->
+        <div class="vista" id="vista-reservas" role="tabpanel" aria-labelledby="tab-reservas" hidden>
+        <section id="formulario-reserva">
+            <h2>Reserva tu Cita</h2>
+            <p>Elige tu servicio, día y hora. Al enviar, se abrirá WhatsApp con tu solicitud lista para confirmar.</p>
+            <form id="form-reserva" action="#" method="post">
+                <div>
+                    <label for="nombre">Nombre completo:</label><br>
+                    <input type="text" id="nombre" name="nombre" placeholder="Escriba su nombre" required>
+                </div>
+                <div>
+                    <label for="servicio">Servicio:</label><br>
+                    <select id="servicio" name="servicio" required>
+                        <option value="">Selecciona un servicio</option>
+                        <option>Corte de adulto (RD$ 500)</option>
+                        <option>Corte de niños (RD$ 400)</option>
+                        <option>Cerquillos (RD$ 300)</option>
+                        <option>Facial (RD$ 200)</option>
+                        <option>Tinte (RD$ 200)</option>
+                        <option>Cejas (RD$ 100)</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="fecha">Fecha:</label><br>
+                    <input type="date" id="fecha" name="fecha" required>
+                </div>
+                <div>
+                    <label for="hora">Hora (9:00 a.m. a 10:00 p.m.):</label><br>
+                    <input type="time" id="hora" name="hora" min="09:00" max="22:00" required>
+                </div>
+                <div>
+                    <label for="mensaje">Comentarios (opcional):</label><br>
+                    <textarea id="mensaje" name="mensaje" rows="3" placeholder="Ej.: quiero degradado con cerquillo..."></textarea>
+                </div>
+                <button type="submit">Reservar por WhatsApp</button>
+            </form>
+            <p id="reserva-ok" class="pequeno" aria-live="polite"></p>
+        </section>
+        </div>
+    </main>
+
+    <!-- Ventanita: foto con el propietario (se abre desde la esquina) -->
+    <div class="visor-fondo" id="visor-fondo" aria-hidden="true">
+        <div class="visor" role="dialog" aria-modal="true" aria-labelledby="visor-titulo">
+            <button type="button" class="visor-cerrar" id="cerrar-foto" aria-label="Cerrar foto">✕</button>
+            <h3 id="visor-titulo">Foto con el propietario</h3>
+            <img src="foto.jpeg" alt="Estudiante Kendri Tatis junto al propietario Winner Cubilete" loading="lazy">
+            <p class="pequeno">Entrevista realizada en el local a Winner Cubilete (Propietario).</p>
+        </div>
+    </div>
+
+    <button type="button" class="subir" id="btn-subir" aria-label="Volver arriba">↑</button>
+
+    <a class="wa-flotante" href="https://wa.me/18294508024?text=Hola%2C%20quisiera%20informaci%C3%B3n%20sobre%20una%20cita." target="_blank" rel="noopener" aria-label="Escribir por WhatsApp">
+        <svg viewBox="0 0 24 24" width="32" height="32" fill="currentColor" aria-hidden="true">
+            <path d="M12.04 2a9.9 9.9 0 0 0-8.5 14.9L2 22l5.27-1.38A9.9 9.9 0 1 0 12.04 2zm0 1.8a8.1 8.1 0 1 1-4.3 14.96l-.3-.19-3.13.82.84-3.05-.2-.32A8.1 8.1 0 0 1 12.04 3.8zm-3.2 4.06c-.2 0-.5.07-.77.36-.26.3-1 1-1 2.4s1.03 2.8 1.17 2.98c.15.2 2.02 3.2 5 4.36 2.47.97 2.97.78 3.5.73.54-.05 1.73-.7 1.97-1.4.25-.68.25-1.27.17-1.4-.07-.12-.27-.2-.56-.35-.3-.15-1.73-.86-2-.95-.27-.1-.47-.15-.66.15-.2.3-.76.95-.93 1.15-.17.2-.34.22-.63.07-.3-.15-1.25-.46-2.38-1.47-.88-.78-1.47-1.75-1.64-2.05-.17-.3-.02-.46.13-.6.13-.14.3-.35.44-.52.15-.17.2-.3.3-.5.1-.2.05-.37-.03-.52-.07-.15-.65-1.6-.9-2.18-.23-.56-.47-.49-.65-.5h-.55z"/>
+        </svg>
+    </a>
+
+    <footer>
+        <p><small>© 2026 Cubilete Barber Shop · Todos los derechos reservados</small></p>
+    </footer>
+
+    <script>
+        /* ===== Cambio de tema luz / oscuridad ===== */
+        var raiz = document.documentElement;
+        var btnTema = document.getElementById("btn-tema");
+
+        function actualizarBoton() {
+            var claro = raiz.getAttribute("data-theme") === "light";
+            btnTema.textContent = claro ? "🌙 Modo oscuro" : "☀️ Modo claro";
+            btnTema.setAttribute("aria-pressed", claro ? "true" : "false");
+        }
+
+        btnTema.addEventListener("click", function () {
+            var nuevo = raiz.getAttribute("data-theme") === "light" ? "dark" : "light";
+            raiz.setAttribute("data-theme", nuevo);
+            try { localStorage.setItem("tema", nuevo); } catch (e) {}
+            actualizarBoton();
+        });
+        actualizarBoton();
+
+        /* ===== Estado abierto / cerrado (hora de República Dominicana) ===== */
+        function minutosRD() {
+            var h = 0, m = 0;
+            new Intl.DateTimeFormat("en-US", { timeZone: "America/Santo_Domingo", hour: "numeric", minute: "numeric", hour12: false })
+                .formatToParts(new Date()).forEach(function (p) {
+                    if (p.type === "hour") h = parseInt(p.value, 10) % 24;
+                    if (p.type === "minute") m = parseInt(p.value, 10);
+                });
+            return h * 60 + m;
+        }
+
+        function actualizarEstado() {
+            var t = minutosRD();
+            var abierto = t >= 540 && t < 1320;
+            document.getElementById("estado-texto").innerHTML =
+                '<span class="estado-punto ' + (abierto ? "abierto" : "cerrado") + '"></span>' +
+                (abierto ? "Abierto ahora" : "Cerrado ahora");
+            var detalle = document.getElementById("estado-detalle");
+            if (abierto) {
+                var falta = 1320 - t;
+                detalle.textContent = "Cerramos a las 10:00 p.m. (en " + Math.floor(falta / 60) + " h " + (falta % 60) + " min)";
+            } else {
+                detalle.textContent = "Abrimos a las 9:00 a.m.";
+            }
+        }
+        actualizarEstado();
+        setInterval(actualizarEstado, 60000);
+
+        /* ===== API: clima (Open-Meteo, sin clave) ===== */
+        var codigosClima = {
+            0: "Despejado", 1: "Mayormente despejado", 2: "Parcialmente nublado", 3: "Nublado",
+            45: "Niebla", 48: "Niebla", 51: "Llovizna ligera", 53: "Llovizna", 55: "Llovizna fuerte",
+            61: "Lluvia ligera", 63: "Lluvia", 65: "Lluvia fuerte", 80: "Chubascos ligeros",
+            81: "Chubascos", 82: "Chubascos fuertes", 95: "Tormenta eléctrica", 96: "Tormenta con granizo", 99: "Tormenta con granizo"
+        };
+
+        fetch("https://api.open-meteo.com/v1/forecast?latitude=18.45097&longitude=-69.93189&current=temperature_2m,weather_code&timezone=America%2FSanto_Domingo")
+            .then(function (r) { if (!r.ok) throw new Error(); return r.json(); })
+            .then(function (d) {
+                document.getElementById("clima-temp").textContent = Math.round(d.current.temperature_2m) + " °C";
+                document.getElementById("clima-desc").textContent =
+                    (codigosClima[d.current.weather_code] || "Clima actual") + " · Santo Domingo Este";
+            })
+            .catch(function () {
+                document.getElementById("clima-desc").textContent = "No se pudo cargar el clima.";
+            });
+
+        /* ===== API: Geolocalización del navegador (distancia al local) ===== */
+        var LAT = 18.45097, LNG = -69.93189;
+
+        document.getElementById("btn-distancia").addEventListener("click", function () {
+            var desc = document.getElementById("distancia-desc");
+            if (!navigator.geolocation) { desc.textContent = "Tu navegador no permite ubicación."; return; }
+            desc.textContent = "Buscando tu ubicación...";
+            navigator.geolocation.getCurrentPosition(function (pos) {
+                var R = 6371, rad = Math.PI / 180;
+                var dLat = (LAT - pos.coords.latitude) * rad, dLng = (LNG - pos.coords.longitude) * rad;
+                var a = Math.sin(dLat / 2) * Math.sin(dLat / 2) +
+                        Math.cos(pos.coords.latitude * rad) * Math.cos(LAT * rad) * Math.sin(dLng / 2) * Math.sin(dLng / 2);
+                var km = 2 * R * Math.asin(Math.sqrt(a));
+                document.getElementById("distancia").textContent = km.toFixed(1) + " km";
+                desc.textContent = "En línea recta desde tu ubicación actual.";
+            }, function () {
+                desc.textContent = "No pudimos acceder a tu ubicación. Revisa los permisos.";
+            }, { timeout: 8000 });
+        });
+
+        /* ===== API: Web Share (compartir la página) ===== */
+        document.getElementById("btn-compartir").addEventListener("click", function () {
+            var etiqueta = document.getElementById("txt-compartir");
+            var datos = { title: "Cubilete Barber Shop", text: "Tu estilo en las mejores manos. Mira precios, horario y ubicación.", url: location.href };
+            if (navigator.share) {
+                navigator.share(datos).catch(function () {});
+            } else if (navigator.clipboard) {
+                navigator.clipboard.writeText(location.href).then(function () {
+                    etiqueta.textContent = "¡Enlace copiado!";
+                    setTimeout(function () { etiqueta.textContent = "Compartir"; }, 2000);
+                });
+            }
+        });
+
+        /* ===== Reserva: WhatsApp (wa.me) + Google Calendar ===== */
+        var campoFecha = document.getElementById("fecha");
+        campoFecha.min = new Date().toLocaleDateString("sv-SE", { timeZone: "America/Santo_Domingo" });
+
+        function dosDigitos(n) { return (n < 10 ? "0" : "") + n; }
+        function formatoCal(d) {
+            return d.getFullYear() + dosDigitos(d.getMonth() + 1) + dosDigitos(d.getDate()) + "T" +
+                   dosDigitos(d.getHours()) + dosDigitos(d.getMinutes()) + "00";
+        }
+
+        document.getElementById("form-reserva").addEventListener("submit", function (e) {
+            e.preventDefault();
+            var f = e.target.elements;
+            var aviso = document.getElementById("reserva-ok");
+            var inicio = new Date(f.fecha.value + "T" + f.hora.value);
+            if (inicio < new Date()) { aviso.textContent = "Elige una fecha y hora que no hayan pasado."; return; }
+
+            var dia = inicio.toLocaleDateString("es-DO", { weekday: "long", day: "numeric", month: "long" });
+            var hora = inicio.toLocaleTimeString("es-DO", { hour: "numeric", minute: "2-digit" });
+            var nota = f.mensaje.value.trim();
+            var texto = "Hola, soy " + f.nombre.value.trim() + ". Quisiera reservar: " + f.servicio.value +
+                        " el " + dia + " a las " + hora + "." + (nota ? " Nota: " + nota : "");
+            window.open("https://wa.me/18294508024?text=" + encodeURIComponent(texto), "_blank", "noopener");
+
+            var fin = new Date(inicio.getTime() + 60 * 60000);
+            var cal = "https://calendar.google.com/calendar/render?action=TEMPLATE" +
+                "&text=" + encodeURIComponent("Cita en Cubilete Barber Shop") +
+                "&dates=" + formatoCal(inicio) + "/" + formatoCal(fin) +
+                "&details=" + encodeURIComponent(f.servicio.value) +
+                "&location=" + encodeURIComponent("Cubilete Barber Shop, Santo Domingo Este") +
+                "&ctz=America/Santo_Domingo";
+            aviso.innerHTML = "";
+            aviso.appendChild(document.createTextNode("Solicitud lista. Confírmala en WhatsApp. "));
+            var enlace = document.createElement("a");
+            enlace.href = cal; enlace.target = "_blank"; enlace.rel = "noopener";
+            enlace.textContent = "Agregar a mi calendario";
+            aviso.appendChild(enlace);
+        });
+
+        /* ===== Ventanita de la foto: abre desde la esquina, cierra al hacer clic fuera ===== */
+        var fondoFoto = document.getElementById("visor-fondo");
+        var btnFoto = document.getElementById("abrir-foto");
+        var btnCerrarFoto = document.getElementById("cerrar-foto");
+
+        function abrirFoto() {
+            fondoFoto.classList.add("abierto");
+            fondoFoto.setAttribute("aria-hidden", "false");
+            btnFoto.setAttribute("aria-expanded", "true");
+            btnCerrarFoto.focus();
+        }
+
+        function cerrarFoto() {
+            fondoFoto.classList.remove("abierto");
+            fondoFoto.setAttribute("aria-hidden", "true");
+            btnFoto.setAttribute("aria-expanded", "false");
+            btnFoto.focus();
+        }
+
+        btnFoto.addEventListener("click", abrirFoto);
+        btnCerrarFoto.addEventListener("click", cerrarFoto);
+        fondoFoto.addEventListener("click", function (e) { if (e.target === fondoFoto) cerrarFoto(); });
+        document.addEventListener("keydown", function (e) {
+            if (e.key === "Escape" && fondoFoto.classList.contains("abierto")) cerrarFoto();
+        });
+
+        /* ===== Pestañas: Inicio / Servicios / Reservas (con # en la URL y botón atrás) ===== */
+        var VISTAS = ["inicio", "servicios", "reservas"];
+        var TITULOS = {
+            inicio: document.title,
+            servicios: "Servicios y precios | Cubilete Barber Shop",
+            reservas: "Reservar cita | Cubilete Barber Shop"
+        };
+        var ID_A_VISTA = {
+            "contacto-rapido": "inicio", "datos-api": "inicio", "ubicacion": "inicio", "preguntas": "inicio",
+            "descripcion-y-servicios": "servicios", "formulario-reserva": "reservas"
+        };
+        var tabs = Array.prototype.slice.call(document.querySelectorAll(".tab"));
+        var barra = document.querySelector("nav");
+
+        function vistaActual() {
+            for (var i = 0; i < tabs.length; i++) if (tabs[i].getAttribute("aria-selected") === "true") return i;
+            return 0;
+        }
+
+        function activarVista(nombre) {
+            VISTAS.forEach(function (v) { document.getElementById("vista-" + v).hidden = (v !== nombre); });
+            tabs.forEach(function (t) {
+                var activa = t.getAttribute("data-vista") === nombre;
+                t.setAttribute("aria-selected", activa ? "true" : "false");
+                t.tabIndex = activa ? 0 : -1;
+                if (activa) t.setAttribute("aria-current", "page"); else t.removeAttribute("aria-current");
+            });
+            document.title = TITULOS[nombre];
+        }
+
+        function irAlContenido() {
+            var y = document.querySelector("main").getBoundingClientRect().top + window.pageYOffset - barra.offsetHeight - 8;
+            if (window.pageYOffset > y) window.scrollTo({ top: Math.max(y, 0), behavior: "smooth" });
+        }
+
+        function ruta() {
+            var id = decodeURIComponent(location.hash.slice(1));
+            var vista = "inicio", destino = null;
+            if (VISTAS.indexOf(id) > -1) { vista = id; }
+            else if (ID_A_VISTA[id]) { vista = ID_A_VISTA[id]; destino = document.getElementById(id); }
+            activarVista(vista);
+            if (id === "contacto-rapido") document.querySelector("#contacto-rapido details").open = true;
+            if (destino) destino.scrollIntoView({ behavior: "smooth", block: "start" }); else irAlContenido();
+        }
+
+        function irAPestana(i) {
+            if (i < 0 || i >= VISTAS.length) return;
+            location.hash = "#" + VISTAS[i];
+        }
+
+        tabs.forEach(function (t) {
+            t.addEventListener("click", function (e) {
+                if (t.getAttribute("data-vista") === VISTAS[vistaActual()] && location.hash === "#" + t.getAttribute("data-vista")) {
+                    e.preventDefault(); irAlContenido();
+                }
+            });
+        });
+
+        /* Flechas del teclado entre pestañas */
+        document.querySelector(".tabs").addEventListener("keydown", function (e) {
+            if (e.key !== "ArrowRight" && e.key !== "ArrowLeft") return;
+            var i = (vistaActual() + (e.key === "ArrowRight" ? 1 : -1) + VISTAS.length) % VISTAS.length;
+            irAPestana(i);
+            tabs[i].focus();
+        });
+
+        /* Deslizar el dedo a izquierda/derecha para cambiar de pestaña (celular) */
+        var toqueX = 0, toqueY = 0, toqueObj = null;
+        document.addEventListener("touchstart", function (e) {
+            var t = e.changedTouches[0];
+            toqueX = t.clientX; toqueY = t.clientY; toqueObj = e.target;
+        }, { passive: true });
+        document.addEventListener("touchend", function (e) {
+            if (!toqueObj || fondoFoto.classList.contains("abierto")) return;
+            if (toqueObj.closest && toqueObj.closest("input, textarea, select, .mapa-marco")) return;
+            if (toqueX < 24 || toqueX > window.innerWidth - 24) return;
+            var t = e.changedTouches[0], dx = t.clientX - toqueX, dy = t.clientY - toqueY;
+            if (Math.abs(dx) > 90 && Math.abs(dx) > Math.abs(dy) * 2) irAPestana(vistaActual() + (dx < 0 ? 1 : -1));
+        }, { passive: true });
+
+        window.addEventListener("hashchange", ruta);
+        ruta();
+
+        /* ===== Botón volver arriba ===== */
+        var btnSubir = document.getElementById("btn-subir");
+        window.addEventListener("scroll", function () {
+            btnSubir.classList.toggle("visible", window.pageYOffset > 500);
+        }, { passive: true });
+        btnSubir.addEventListener("click", function () { window.scrollTo({ top: 0, behavior: "smooth" }); });
+    </script>
+</body>
+</html>
